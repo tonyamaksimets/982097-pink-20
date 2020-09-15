@@ -1,0 +1,161 @@
+.post {
+  position: relative;
+
+  background-color: $dark-background-color;
+
+  &--panorama::before {
+    content: "Панорама дня";
+
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 0;
+
+    padding-top: 12px;
+    padding-right: 20px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    display: block;
+
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: $light-text-color;
+
+    background-color: $accent-color;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--panorama::before {
+      top: 58px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--panorama::before {
+      top: 54px;
+    }
+  }
+}
+
+.post__link {
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.post__photo {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: auto;
+
+  &--panorama {
+    margin-left: -20px;
+    margin-right: -20px;
+    width: calc(100% + 20px * 2);
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+
+    &--panorama {
+      width: calc(100% + 20px * 2);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--panorama {
+      margin-left: -10px;
+      margin-right: -10px;
+      width: 960px;
+    }
+  }
+}
+
+.post__info {
+  padding-top: 18px;
+  padding-right: 10px;
+  padding-bottom: 18px;
+  padding-left: 17px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 24px;
+    padding-right: 30px;
+    padding-bottom: 25px;
+    padding-left: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 28px;
+  }
+}
+
+.post__wrapper {
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    order: -2;
+  }
+}
+
+.post__author {
+  @include paragraph-style-reset;
+
+  margin-right: 3px;
+
+  font-weight: bold;
+}
+
+.post__time {
+  @include paragraph-style-reset;
+
+  font-weight: 300;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.post__text {
+  @include paragraph-style-reset;
+
+  margin-bottom: 11px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 48px;
+
+    .post--panorama & {
+      margin-bottom: 0;
+    }
+
+    & br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .post--panorama & {
+      min-height: 0;
+    }
+  }
+}
+
+.post__like-counter {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+
+    .post--panorama & {
+      order: -1;
+
+      width: 120px;
+    }
+  }
+}
