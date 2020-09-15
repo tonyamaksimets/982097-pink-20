@@ -64,6 +64,3 @@ var addNewPostRangeClickHandler = function(newPostRange, newPostToggle, newPostI
 for (var i = 0; i < newPostRangeList.length; i++) {
   addNewPostRangeClickHandler(newPostRangeList[i], newPostToggleList[i], newPostInputList[i]);
 }
-
-
-
