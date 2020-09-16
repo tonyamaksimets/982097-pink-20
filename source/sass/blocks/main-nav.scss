@@ -103,7 +103,6 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
   }
 }
 
@@ -126,19 +125,22 @@
   border-bottom: 1px solid $dark-border-color;
 
   @media (min-width: $desktop-width) {
-    margin-left: 79px;
+    margin-bottom: 30px;
     padding: 0;
+    width: 170px;
 
     font-weight: normal;
     line-height: 18px;
     text-transform: none;
+    text-align: center;
 
     background-color: transparent;
 
     border: none;
 
-    &:first-child {
-      margin-left: 0;
+    &:nth-child(4n) {
+      width: 160px;
+      text-align: right;
     }
   }
 }
@@ -165,8 +167,7 @@
     }
 
     &--active {
-      display: block;
-      padding-bottom: 12px;
+      padding-bottom: 8px;
     }
   }
 }

@@ -23,7 +23,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    padding-top: 24px;
+    padding-top: 25px;
     width: 100%;
   }
 }
@@ -61,5 +61,6 @@
 .page-header__main-nav {
   @media (min-width: $desktop-width) {
     padding-top: 20px;
+    width: 670px;
   }
 }

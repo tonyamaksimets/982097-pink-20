@@ -1,4 +1,4 @@
-.slider {
+.slider__list {
   position: relative;
 }
 
@@ -90,6 +90,12 @@
   }
 
   &:disabled {
-    color: transparent;
+    &:hover,
+    &:focus,
+    &:active {
+      color: rgba($basic-text-color, 0.3);
+
+      cursor: default;
+    }
   }
 }

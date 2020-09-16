@@ -32,6 +32,7 @@ sliderControlPrev.addEventListener('click', function() {
         if ((k - 1) === 0) {
           sliderControlPrev.setAttribute('disabled', 'true');
         }
+
         break;
       }
     }
@@ -50,6 +51,7 @@ sliderControlNext.addEventListener('click', function() {
         if ((l + 1) === (sliderControlsList.length - 1)) {
           sliderControlNext.setAttribute('disabled', 'true');
         }
+
         break;
       }
     }

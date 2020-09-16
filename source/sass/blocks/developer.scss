@@ -13,9 +13,14 @@
 }
 
 .developer__text {
+  position: relative;
+  top: 1px;
+
   line-height: 18px;
 
   @media (min-width: $desktop-width) {
+    left: 5px;
+
     font-size: 18px;
   }
 }

@@ -16,7 +16,7 @@
 }
 
 .links-block__default-link {
-  margin-bottom: 32px;
+  margin-bottom: 18px;
 
   font-size: 18px;
   line-height: 18px;
@@ -35,11 +35,11 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 46px;
+    margin-bottom: 32px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 65px;
+    margin-bottom: 51px;
 
     font-size: 21px;
     line-height: 21px;
@@ -53,22 +53,39 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 23px;
+    margin-bottom: 9px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 44px;
+    margin-bottom: 30px;
   }
 }
 
 .links-block__item {
-  margin-right: 35px;
+  margin-top: 14px;
+  margin-left: 18px;
+  margin-bottom: 14px;
+  margin-right: 18px;
 
-  &:nth-child(3n) {
-    margin-right: 0;
+  &:nth-child(2),
+  &:nth-child(3) {
+    padding-top: 7px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &:nth-child(2),
+    &:nth-child(3) {
+      padding-top: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:nth-child(2),
+    &:nth-child(3) {
+      padding-top: 10px;
+    }
   }
 }
 

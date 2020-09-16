@@ -10,11 +10,11 @@ var addTariffsControlClickHandler = function(tariffsControl, tariffsControlNumbe
     for (var k = 0; k < tariffsServiceList.length; k++) {
       tariffsServiceList[k].style.left = tariffsControlNumber * tariffsCell.offsetWidth  + 'px';
       tariffsServiceList[k].style.transform = 'none';
-    };
+    }
 
     for (var j = 0; j < tariffsControlsList.length; j++) {
       tariffsControlsList[j].classList.remove('tariffs__control--current');
-    };
+    }
 
     tariffsControl.classList.add('tariffs__control--current');
   });

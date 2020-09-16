@@ -1,7 +1,7 @@
 .gallery__slogan {
   @include paragraph-style-reset;
 
-  padding-top: 44px;
+  padding-top: 45px;
   padding-right: 15px;
   padding-bottom: 50px;
   padding-left: 15px;
@@ -38,7 +38,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 51px 20px;
+    grid-gap: 52px 20px;
   }
 }
 

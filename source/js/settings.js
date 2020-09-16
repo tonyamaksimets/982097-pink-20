@@ -10,7 +10,7 @@ var addNewPostControlClickHandler = function(newPostControl, newPostSetting) {
     for (var j = 0; j < newPostControlsList.length; j++) {
       newPostControlsList[j].classList.remove('new-post__control--current');
       newPostSettingList[j].classList.remove('new-post__setting--current');
-    };
+    }
 
     newPostControl.classList.add('new-post__control--current');
     newPostSetting.classList.add('new-post__setting--current');
@@ -61,6 +61,6 @@ var addNewPostRangeClickHandler = function(newPostRange, newPostToggle, newPostI
   };
 };
 
-for (var i = 0; i < newPostRangeList.length; i++) {
-  addNewPostRangeClickHandler(newPostRangeList[i], newPostToggleList[i], newPostInputList[i]);
+for (var k = 0; k < newPostRangeList.length; k++) {
+  addNewPostRangeClickHandler(newPostRangeList[k], newPostToggleList[k], newPostInputList[k]);
 }

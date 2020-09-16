@@ -16,7 +16,7 @@
     background-color: $accent-background-color;
     background-image: url("../img/bg-back-mobile@1x.jpg");
     background-size: cover;
-    background-position: center top;
+    background-position: center;
     background-repeat: no-repeat;
 
     @media (min-resolution: 2dppx) {
@@ -34,7 +34,7 @@
 
     display: block;
     width: 100%;
-    height: 224px;
+    height: 225px;
 
     background-color: $basic-background-color;
   }
@@ -57,7 +57,7 @@
     &::after {
       top: 441px;
 
-      height: 288px;
+      height: 289px;
     }
   }
 
@@ -75,7 +75,7 @@
     &::after {
       top: 394px;
 
-      height: 459px;
+      height: 460px;
     }
   }
 }
@@ -91,7 +91,7 @@
     position: relative;
 
     padding-top: 205px;
-    padding-right: 340px;
+    padding-right: calc(100% - 320px);
     min-height: 729px;
 
     overflow: hidden;

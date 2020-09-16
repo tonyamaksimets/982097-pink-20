@@ -2,7 +2,7 @@
   background-image: linear-gradient(177deg, $basic-background-color 47px, $dark-background-color 47px);
 
   @media (min-width: $desktop-width) {
-    background-image: linear-gradient(176deg, $basic-background-color 128px, $dark-background-color 128px);
+    background-image: linear-gradient(176deg, $basic-background-color 15%, $dark-background-color 15%);
   }
 }
 
@@ -24,6 +24,7 @@
     padding-bottom: 93px;
   }
 }
+
 
 .tariffs__table {
   position: absolute;
@@ -160,6 +161,7 @@
 
   @media (min-width: $tablet-width) {
     position: static;
+    transform: none;
 
     padding-top: 9px;
     padding-bottom: 9px;
