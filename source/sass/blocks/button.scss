@@ -1,0 +1,28 @@
+.button {
+  @include link-style-reset;
+  @include button-style-reset;
+
+  padding-top: 22px;
+  padding-right: 20px;
+  padding-bottom: 24px;
+  padding-left: 20px;
+  display: block;
+
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: $light-text-color;
+
+  background-color: $special-accent-color;
+
+  border-radius: 2px;
+
+  &:hover,
+  &:focus {
+    background-color: $dark-special-accent-color;
+  }
+
+  &:active {
+    color: rgba($light-text-color, 0.3);
+  }
+}

@@ -1,0 +1,44 @@
+.developer {
+  @include link-style-reset;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.developer__text {
+  position: relative;
+  top: 1px;
+
+  line-height: 18px;
+
+  @media (min-width: $desktop-width) {
+    left: 5px;
+
+    font-size: 18px;
+  }
+}
+
+.developer__logo {
+  position: relative;
+  left: 5px;
+
+  color: $accent-color;
+
+  vertical-align: middle;
+
+  .developer:hover &,
+  .developer:focus & {
+    color: $basic-text-color;
+  }
+
+  .developer:active & {
+    opacity: 0.3;
+  }
+}

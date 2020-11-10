@@ -1,0 +1,170 @@
+.main-nav {
+  @media (max-width: $tablet-only-width) {
+    position: relative;
+
+    &--opened {
+      background-color: $accent-background-color;
+    }
+  }
+}
+
+.main-nav__toggle {
+  @include button-style-reset;
+
+  display: block;
+  margin-left: auto;
+  padding-top: 21px;
+  padding-left: 20px;
+  padding-bottom: 21px;
+  padding-right: 20px;
+  height: 66px;
+  box-sizing: border-box;
+
+  color: $light-text-color;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  .main-nav--opened & {
+    padding-top: 22px;
+    padding-bottom: 23px;
+    height: 69px;
+  }
+
+  @media (max-width: $tablet-only-width) {
+    .main-nav--nojs & {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 43px;
+    padding-bottom: 43px;
+    height: 110px;
+
+    .main-nav--opened & {
+      padding-top: 42px;
+      padding-bottom: 43px;
+      height: 109px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav__image-burger {
+  display: block;
+
+  .main-nav--opened & {
+    display: none;
+  }
+}
+
+.main-nav__image-cross {
+  display: none;
+
+  .main-nav--opened & {
+    display: block;
+  }
+}
+
+.main-nav__list {
+  @include list-style-reset;
+
+  @media (max-width: $tablet-only-width) {
+    position: absolute;
+    z-index: 4;
+
+    display: none;
+    width: 100%;
+
+    .main-nav--nojs & {
+      position: static;
+    }
+
+    .main-nav--opened & {
+      display: block;
+
+      border-top: 1px solid $dark-border-color;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.main-nav__item {
+  padding-top: 15px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $light-text-color;
+
+  background-color: $accent-background-color;
+
+  border-top: 1px solid rgba($light-border-color, 0.15);
+  border-bottom: 1px solid $dark-border-color;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
+    padding: 0;
+    width: 170px;
+
+    font-weight: normal;
+    line-height: 18px;
+    text-transform: none;
+    text-align: center;
+
+    background-color: transparent;
+
+    border: none;
+
+    &:nth-child(4n) {
+      width: 160px;
+      text-align: right;
+    }
+  }
+}
+
+.main-nav__link {
+  @include link-style-reset;
+
+  &[href]:hover,
+  &[href]:focus {
+    color: $accent-color;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
+
+  &--active {
+    border-bottom: 2px solid $light-border-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    &[href]:active {
+      color: $light-text-color;
+    }
+
+    &--active {
+      padding-bottom: 8px;
+    }
+  }
+}

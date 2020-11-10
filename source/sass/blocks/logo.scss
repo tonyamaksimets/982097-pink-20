@@ -1,0 +1,39 @@
+.logo {
+  & .logo__glasses {
+    display: none;
+  }
+
+  & .logo__glasses-broken {
+    display: none;
+  }
+
+  & .logo__stars {
+    display: none;
+  }
+
+  &--pink-glasses {
+    & .logo__glasses {
+      display: block;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    & .logo__glasses {
+      display: block;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    & .logo__glasses {
+      display: none;
+    }
+
+    & .logo__glasses-broken {
+      display: block;
+    }
+
+    & .logo__stars {
+      display: block;
+    }
+  }
+}
