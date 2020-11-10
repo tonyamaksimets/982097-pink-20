@@ -928,14 +928,13 @@ template {
       height: 405px; } }
 
 .features__wrapper {
+  position: relative;
   padding-top: 41px; }
   @media (min-width: 660px) {
     .features__wrapper {
-      position: relative;
       padding-top: 46px; } }
   @media (min-width: 960px) {
     .features__wrapper {
-      position: static;
       padding-top: 60px; } }
 
 .features__slogan {
