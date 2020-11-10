@@ -83,14 +83,11 @@
     position: absolute;
     z-index: 4;
 
-
     display: none;
     width: 100%;
 
     .main-nav--nojs & {
       position: static;
-
-      margin-top: 69px;
     }
 
     .main-nav--opened & {

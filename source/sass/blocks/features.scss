@@ -1,12 +1,32 @@
 .features {
-  background-image: linear-gradient(174deg, $basic-background-color 248px, $dark-background-color 248px);
+  position: relative;
+
+  background-color: $dark-background-color;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    display: block;
+    width: 100%;
+    height: 248px;
+
+    background-image: linear-gradient(to left top, transparent 50%, $basic-background-color 50%);
+  }
 
   @media (min-width: $tablet-width) {
-    background-image: linear-gradient(176deg, $basic-background-color 287px, $dark-background-color 287px);
+    &::before {
+      height: 287px;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    background-image: linear-gradient(175deg, $basic-background-color 405px, $dark-background-color 405px);
+    &::before {
+      height: 405px;
+    }
   }
 }
 

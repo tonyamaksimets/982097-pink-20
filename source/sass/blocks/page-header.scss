@@ -3,6 +3,12 @@
 
   background-color: rgba($darkest-background-color, 0.3);
 
+  @media (max-width: $tablet-only-width) {
+    &--nojs {
+      background-color: $accent-background-color;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: -$tablet-header-min-height;
   }
@@ -16,8 +22,16 @@
 
   min-height: $mobile-header-min-height;
 
+  .page-header--nojs & {
+    padding-top: 69px;
+  }
+
   @media (min-width: $tablet-width) {
     min-height: $tablet-header-min-height;
+
+    .page-header--nojs & {
+      padding-top: 100px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -25,6 +39,10 @@
     justify-content: space-between;
     padding-top: 25px;
     width: 100%;
+
+    .page-header--nojs & {
+      padding-top: 25px;
+    }
   }
 }
 
