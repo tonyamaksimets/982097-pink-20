@@ -1,47 +1,51 @@
 .features {
   position: relative;
 
-  background-color: $dark-background-color;
+  background-image: linear-gradient($basic-background-color 220px, $dark-background-color 220px);
 
   &::before {
     content: "";
 
     position: absolute;
     left: 0;
-    top: 0;
+    top: 220px;
 
     display: block;
     width: 100%;
-    height: 248px;
+    height: 30px;
 
     background-image: linear-gradient(to left top, transparent 50%, $basic-background-color 50%);
   }
 
   @media (min-width: $tablet-width) {
+    background-image: linear-gradient($basic-background-color 230px, $dark-background-color 230px);
+
     &::before {
-      height: 287px;
+      top: 230px;
+      height: 60px;
     }
   }
 
   @media (min-width: $desktop-width) {
+    background-image: linear-gradient($basic-background-color 320px, $dark-background-color 320px);
+
     &::before {
-      height: 405px;
+      top: 320px;
+      height: 85px;
     }
   }
 }
 
 .features__wrapper {
+  position: relative;
+
   padding-top: 41px;
 
   @media (min-width: $tablet-width) {
-    position: relative;
-
     padding-top: 46px;
   }
 
   @media (min-width: $desktop-width) {
-    position: static;
-
     padding-top: 60px;
   }
 }
